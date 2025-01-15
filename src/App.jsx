@@ -25,9 +25,11 @@ function App() {
       <ul>
       {lists.map(item => (
         <li key={item.objectID}>
-          <p>{item.title}</p>
+          <p>title: {item.title}</p>
           <a href={item.url} className='link'>{item.title}</a>
-          <p>{item.author}</p>
+          <p>Author: {item.author}</p>
+          <p>Number of Comments: {item.num_comments}</p>
+          <p>Points: {item.points}</p>
         </li>
       ))}
       </ul>
