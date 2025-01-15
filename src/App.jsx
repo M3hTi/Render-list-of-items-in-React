@@ -26,7 +26,7 @@ function App() {
       {lists.map(item => (
         <li key={item.objectID}>
           <p>title: {item.title}</p>
-          <a href={item.url} className='link'>{item.title}</a>
+          <a href={item.url} className='link' target='_blank'>{item.title}</a>
           <p>Author: {item.author}</p>
           <p>Number of Comments: {item.num_comments}</p>
           <p>Points: {item.points}</p>
